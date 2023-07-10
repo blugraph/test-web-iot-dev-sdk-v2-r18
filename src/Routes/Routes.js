@@ -15,8 +15,9 @@ import awsconfig from '../aws-exports';
 //import UpdateWebSocket from "../UpdateWebSocket";
 //import RefreshUpdateWebSocket from "../RefreshUpdateWebSocket";
 //import Demo2 from "../Demo2";
-import Demo3 from "../Demo3";
+//import Demo3 from "../Demo3";
 import Demo4 from "../Demo4";
+import Demo5 from "../Demo5";
 
 Amplify.configure(awsconfig);
 // >>New - Configuring Auth Module
@@ -28,8 +29,8 @@ export default function Routes1(props) {
     <Router history={history} basename="/" forceRefresh={true}> 
       <Routes>
             <Route exact path="/" element={<Home/>}/>
-            <Route exact path="/demo3" element={<Demo3/>}/>
             <Route exact path="/demo4" element={<Demo4/>}/>
+            <Route exact path="/demo5" element={<Demo5/>}/>
       </Routes>
     </Router>
   );
